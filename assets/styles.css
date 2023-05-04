@@ -48,3 +48,90 @@ nav {
   color: #edf2f4;
   font-size: 20px;
 }
+
+main {
+  background: #778da9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 100%;
+}
+
+/* HERO */
+
+#hero {
+  margin-top: 65px;
+  padding: 70px 0;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+
+.hero-info h1 {
+  font-size: 48px;
+  width: 80%;
+  min-width: 500px;
+  font-weight: 800;
+  color: white;
+}
+
+.hero-info p {
+  font-size: 14px;
+  width: 70%;
+  color: #edf2f4;
+}
+
+.hero-info a {
+  color: white;
+  background-color: #118ab2;
+  width: 100px;
+  padding: 8px 0;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.hero-image {
+  border-radius: 10px;
+}
+
+/* INFO */
+
+#info {
+  padding: 70px 0;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.discover-text {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  gap: 20px;
+}
+
+.discover-text p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #778da9;
+}
+
+.discover-text a {
+  color: white;
+  font-weight: 600;
+  text-decoration: underline;
+}
