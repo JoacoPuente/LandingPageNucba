@@ -1,19 +1,27 @@
+@font-face {
+  font-family: Fuente;
+  src: url(./Fuente/samsungsharpsans.otf);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
+  font-family: Fuente;
 }
+
+/* HEADER */
 
 header {
   background-color: #14213d;
   width: 100%;
+  height: 70px;
+  padding: 0 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
-  padding: 0 30px;
   position: fixed;
   top: 0;
   z-index: 2;
@@ -23,73 +31,59 @@ header {
   height: 80%;
 }
 
-ul {
+nav ul {
+  display: flex;
   list-style: none;
-  display: flex;
-  gap: 10px;
+  gap: 25px;
 }
 
-nav,
-.navbar-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-nav {
-  gap: 150px;
-}
-
-.navbar-list {
-  gap: 30px;
-}
-
-.navbar-list a {
+.navbar-link {
   color: #edf2f4;
   font-size: 20px;
 }
 
+/* MAIN */
+
 main {
   background: #778da9;
+  color: white;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
-  width: 100%;
 }
 
 /* HERO */
 
 #hero {
-  margin-top: 65px;
+  margin-top: 70px;
   padding: 70px 0;
   max-width: 1200px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  gap: 50px;
 }
 
 .hero-info {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 20px;
-  width: 50%;
 }
 
 .hero-info h1 {
   font-size: 48px;
-  width: 80%;
   min-width: 500px;
-  font-weight: 800;
+  font-weight: 700;
   color: white;
 }
 
 .hero-info p {
+  font-weight: 300;
   font-size: 14px;
   width: 70%;
-  color: #edf2f4;
+  color: white;
 }
 
 .hero-info a {
@@ -98,40 +92,26 @@ main {
   width: 100px;
   padding: 8px 0;
   border-radius: 10px;
-  font-size: 14px;
+  font-size: 15px;
   text-align: center;
 }
 
 .hero-image {
   border-radius: 10px;
+  width: 35%;
 }
 
 /* INFO */
 
 #info {
-  padding: 70px 0;
-  max-width: 1200px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 0;
+  max-width: 1200px;
   gap: 10px;
   margin-bottom: 50px;
-}
-
-.discover-text {
-  display: flex;
-  flex-direction: column;
-  width: 45%;
-  gap: 20px;
-}
-
-.discover-text p {
-  font-size: 16px;
+  width: 80%;
   font-weight: 300;
-  color: #778da9;
-}
-
-.discover-text a {
-  color: white;
-  font-weight: 600;
-  text-decoration: underline;
 }
