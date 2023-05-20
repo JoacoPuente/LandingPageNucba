@@ -4,19 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
     <title>LandingPage</title>
-    <link rel="stylesheet" href="./assets/styles.css" />
   </head>
   <body>
     <header>
       <img src="./assets/img/microchip.png" alt="logo" class="logo" />
-      <nav>
-        <ul>
-          <li><a class="navbar-link" href="#">Mi cuenta</a></li>
-          <li><a class="navbar-link" href="#">Inicio</a></li>
-          <li><a class="navbar-link" href="#">Productos</a></li>
-          <li><a class="navbar-link" href="#">Contacto</a></li>
+      <nav class="navbar">
+        <label for="menu-toggle" class="menu-label">
+          <img src="./assets/img/menu.png" alt="" class="menu-icon" />
+        </label>
+        <input type="checkbox" id="menu-toggle" />
+        <ul class="navbar-list">
+          <li><a href="#">Mi cuenta</a></li>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Productos</a></li>
+          <li><a href="#">Contacto</a></li>
         </ul>
+        </div>
       </nav>
     </header>
 
@@ -25,23 +30,72 @@
         <div class="hero-info">
           <h1>Equipos hechos a tu medida</h1>
           <p>
-            Nos dedicamos a la venta de pc armadas con periféricos de primeras
-            marcas y la mejor calidad.
+            Nos dedicamos a la venta de pc armadas con periféricos de primeras marcas y la mejor calidad.
           </p>
           <a href="#">Empezar</a>
         </div>
-        <img src="./assets/img/hero.jpg" alt="compu" class="hero-image">
-        </div>
+        <img src="./assets/img/portada.png" alt="Portada" class="portada">
       </section>
 
-      <section id="info">
+      <section id="infi">
         <div>
           <div class="info-text">
-            <p>No se me ocurrio</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi iste fugit beatae eius nam.</p>
+          </div>
+        </div>
+      </section>
+      
+      <section id="beneficios">
+        <h2>Our Advantages</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, voluptatem explicabo?</p>
+        <div class="info-cards-container">
+          <div class="info-card">
+            <img src="./assets/img/microchip.png" alt="Icono beneficios" />
+            <h3>Benefit 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit magni rem corporis nemo numquam quasi consequuntur voluptates repellat maxime at!
+            </p>
+          </div>
+          <div class="info-card">
+            <img src="./assets/img/microchip.png" alt="Icono beneficios" />
+            <h3>Benefit 2</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit magni rem corporis nemo numquam quasi consequuntur voluptates repellat maxime at!
+            </p>
+          </div>
+          <div class="info-card">
+            <img src="./assets/img/microchip.png" alt="Icono beneficios" />
+            <h3>Benefit 3</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit magni rem corporis nemo numquam quasi consequuntur voluptates repellat maxime at!
+            </p>
           </div>
         </div>
       </section>
 
+      <section id="contacto">
+        <div class="datos">
+          <h2>Contactanos</h2>
+          <p>Joaquin Puente</p>
+          <ul>
+            <li>👉🏼Direccion</li>
+            <li>👉🏼Correo</li>
+            <li>👉🏼Numero de telefono</li>
+          </ul>
+        </div>
+        <img src="./assets/img/contacto.png" alt="" class="imgcontacto">
+      </section>
+
     </main>
+    <footer>
+      <img src="./assets/img/microchip.png" alt="" class="imgfooter">
+      <div>
+        <ul class="footer-links">
+          <li><a href="#">Términos de Uso</a></li>
+          <li><a href="#">Trabajá con Nosotros</a></li>
+          <li><a href="#">Soporte</a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
